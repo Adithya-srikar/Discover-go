@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+    <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav_links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>  
+            </ul>
+        </nav>
+        <img src="logo.png" alt="Logo" class="logo">
+        <a class="cta" href="login.html"><button>Login</button></a>
+    </header>
+    <section class="Home"></section>
+    <div class="Login-form">
+        <h2>Login</h2>
+        <form id="Login-form" onsubmit="return showSuccessMessage()">
+           
+            <label for="email">Email:</label>
+            <input type="email" id="email" name "email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <a href="register.html">Don't have an account? Sign Up</a><br>
+            <button type="submit">Login</button>
+        </form>
+        <div id="success-message" class="hidden">
+            <p>Login Successful!</p>
+        </div>
+    </div>
+
+    <script>
+        function showSuccessMessage() {
+            event.preventDefault();
+
+            document.getElementById("Login-form").style.display = "none";
+
+            document.getElementById("success-message").style.display = "block";
+           
+            setTimeout(function() {
+                window.location.replace("book.html"); 
+                }, 2000);
+            return false;
+        }
+    </script>
+</body>
+</html>

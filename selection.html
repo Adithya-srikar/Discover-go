@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="selection.css" />
+	<script src="selection.js" ></script>
+    <title>selection</title>
+</head>
+<body>
+	<header class="header">
+        <nav class="nav">
+            <ul class="nav_links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="logo.png" alt="Logo" class="logo">
+		<a class="cta" href="login.html"><button>Login</button></a>
+	</header>
+	<div class="dropdown-container">
+		<p >Above the Dropdown</p>
+	  
+		<div class="dropdown" id="dropdown">
+		  <div class="dropdown-select" onclick="toggleDropdown()">Select an Option</div>
+		  <div class="dropdown-options" id="dropdownOptions">
+			<div class="dropdown-option" onclick="changeCards('Option 1')">Option 1</div>
+			<div class="dropdown-option" onclick="changeCards('Option 2')">Option 2</div>
+			<div class="dropdown-option" onclick="changeCards('Option 3')">Option 3</div>
+		  </div>
+		</div>
+		</div>
+	  
+	<div id="card-container">
+		<div class="cards" id="cards">
+		  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDqbuCTFVV_E&psig=AOvVaw3RJdjoDXRXlUIyxsRhL6mT&ust=1701491523502000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDE3IC07YIDFQAAAAAdAAAAABAE"
+		</div>
+	  </div>
+</body>
+</html>
